@@ -1,8 +1,0 @@
-# auth register
-curl -XPOST localhost:11000/auth/register --header 'Content-Type: application/json' --data '{"name": "test", "password": "1234"}'
-
-# image
-curl -XPOST localhost:11000/api/face-generation --header 'Content-Type: application/json' --data '{"source": "/workspace/video_img/0.jpg", "target": "/workspace/video_img/13.jpeg"}' --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCJ9.QlmOBM7imQkVauXII7Hd9rYAFgW6NKMuvZ4GmVSTgpM'
-
-# video
-curl -XPOST localhost:11000/api/face-generation --header 'Content-Type: application/json' --data '{"source": "/workspace/data/video_img/0.jpg", "target": "/workspace/data/video_img/dance_sample.mp4"}' --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCJ9.QlmOBM7imQkVauXII7Hd9rYAFgW6NKMuvZ4GmVSTgpM'

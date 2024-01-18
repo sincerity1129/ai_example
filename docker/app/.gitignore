@@ -6,8 +6,6 @@ data/video_img/*
 
 # weight file
 .assets/models/*
-# onnx
-.onnx
 
 # Pycharm project files
 .idea/
