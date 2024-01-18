@@ -14,7 +14,7 @@ data/video_img/*
 
 # Virtual Env directory
 venv/
-
+.vscode
 # Log, PID
 *.log
 logs/
