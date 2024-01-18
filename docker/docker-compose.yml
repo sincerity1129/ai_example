@@ -1,0 +1,19 @@
+version: '3'
+services:
+  face_fusion_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: face_fusion_api
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0
+    ports:
+      - 11000:11000
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./app:/workspace
+    shm_size: 8G
+    ipc : host
+    runtime: nvidia
+    stdin_open: true # docker 유지
+    tty: true # docker 유지
