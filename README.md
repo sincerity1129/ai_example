@@ -1,5 +1,6 @@
 #  face fusion 1.0
-face swap
+    원본코드: https://github.com/facefusion/facefusion
+    
 
 ## docker 환경 설정
 
